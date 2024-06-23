@@ -36,7 +36,7 @@ fi
 [ -z "${BASE_TERRAIN_PATH}" ] && BASE_TERRAIN_PATH="/tilesets"
 
 # Run the server
-exec /sbin/setuser daemon /usr/local/bin/cesium-terrain-server \
+exec /go/bin/cesium-terrain-server \
     -port=8000 \
     -memcached="${MEMCACHED}" \
     -dir="${TILESET_DIR}" \
